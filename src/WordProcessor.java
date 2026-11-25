@@ -2,19 +2,20 @@ public class WordProcessor {
     String text = "";
 
     public String toUpperCase() {
-        return "1";
+        text = text.toUpperCase();
+        return text;
     }
-
 
     public String toLowerCase() {
-        return "2";
+        text = text.toLowerCase();
+        return text;
     }
-
 
     public String toSnakeCase() {
-        return "3";
+        text = text.toLowerCase();
+        text = text.trim().replaceAll("\\s+", "_");
+        return text;
     }
-
 
     public String toCamelCase() {
         return "4";
